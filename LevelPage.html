@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Level Page</title>
+        <link rel="stylesheet" href="style/style.css" />
+    </head>
+    <body>
+        <div id = "bkg" >
+        <div id="mainwrapper">
+
+            <form action="">
+
+                <label for=""><h3>Select Level</h3></label>
+
+                <select name="" id="level">
+                  <option value="level1">Level1</option>
+                  <option value="level2">Level2</option>
+                </select>
+               
+                <label for=""><h3>Select Mode</h3></label>
+               
+                <select name="" id="mode">
+                  <option value="multiplyer">multiplyer</option>
+                  <option value="singleplyer">singleplyer</option>
+                </select>  
+                <input id="login" type="button" value="Next" />
+
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById("login").addEventListener('click', function()
+        {
+            var level = document.getElementById("level"); 
+            sessionStorage.setItem("level",level.selectedIndex);
+            var mode = document.getElementById("mode");
+            window.sessionStorage.setItem("mode",mode.selectedIndex);
+            if(mode.selectedIndex==1){
+                window.location.href = "gameAnimation.html"
+            }else{
+                window.location.href = "LoginPage.html"
+            }
+        }
+        );
+
+    </script>
+
+    </body>
+</html>

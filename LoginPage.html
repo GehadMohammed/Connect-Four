@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="style/style.css" />
+    </head>
+    <body>
+        <div id = "bkg" >
+        <div id="mainwrapper">
+
+            <form action="">
+       
+                <label><h3>First plyer Name</h3></label>
+                <input id="name1" type="text" />
+                <label><h3>Second plyer Name</h3></label>
+                <input id="name2" type="text" />
+                <span id="nameerror">enter your name</span>
+                <input id="login" type="button" value="Login" />
+
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById("login").addEventListener('click', function(){
+            var name1 = document.getElementById("name1").value;
+            var name2 = document.getElementById("name2").value;
+            window.sessionStorage.setItem('game',JSON.stringify({name1: name1, name2: name2}));
+            window.location.href = "gameAnimation.html"
+        });
+
+    </script>
+
+    </body>
+</html>

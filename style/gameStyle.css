@@ -1,0 +1,78 @@
+
+body, html
+{
+    height: 100%;
+    margin: 0;
+    background-image: url("../images/bk.gif");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#currentball {
+    position: absolute;
+    background: yellow;
+    border-radius: 50%;
+    width: 73px;
+    height: 73px;
+    margin-left: 230px;
+    transition: 1.0s;
+    z-index: 1;
+
+}
+
+#ball {
+    position: absolute;
+    border-radius: 50%;
+    width: 73px;
+    height: 73px;
+    background: yellow;
+    margin-left: 230px;
+    margin-top: 0px;
+}
+
+#mainwrapper {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 300px;
+    z-index: 2;
+    text-align: center;
+}
+
+#leftavatar{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-right: 50px;
+}
+
+#leftavatar>img {
+    width: 350px;
+    height: 350px;
+}
+
+#rightavatar{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    margin-right: 100px;
+}
+
+#rightavatar>img {           
+    width: 200px;
+    height: 200px;
+}
+
+[type="button"] {
+    width: 150px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: lightblue;
+    padding: 20px;
+}
